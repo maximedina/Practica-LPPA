@@ -1,0 +1,43 @@
+body {
+    background:#0F0;
+}
+ 
+#div1
+{
+    margin: 50px;
+    padding:40px;
+    width:320px;
+    height:270px;
+    background:#F00;
+}
+#div2
+{
+    margin: auto;
+    width:90%;
+    height:20%;
+    background:#999;
+}
+#div3
+{
+    margin: auto;
+    margin-top: 30px;
+    width:90%;
+    height:20%;
+    background:#00F;
+}
+#div4
+{
+    margin: auto;
+    margin-top: 30px;
+    width:90%;
+    height:20%;
+    background:#FFF;
+}
+#div5
+{
+    margin: auto;
+    margin-top: 30px;
+    width:90%;
+    height:10%;
+    background:#000;
+}

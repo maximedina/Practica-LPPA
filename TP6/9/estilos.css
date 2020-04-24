@@ -1,0 +1,95 @@
+body {
+    background:#00F;
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-right: 4%;
+}
+ 
+#main-header
+{
+    float: left;
+    padding:1%;
+    width:100%;
+    height:60px;
+    background:#b4b4b4;
+}
+
+#header1
+{
+    float: left;
+    width:80%;
+    height:90%;
+    background:#F00;
+}
+#header2
+{
+    float: left;
+    margin-left: 2%;
+    width:18%;
+    height:90%;
+    background:#000;
+}
+#main-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    margin-top: 2%;
+    width:100%;
+    height:320px;
+    background:#F00;
+}
+#menu
+{
+    float: left;
+    padding:1%;
+    width:10%;
+    height:77%;
+    background:#0F0;
+}
+.menuItem
+{
+    float: left;
+    margin-top:10%;
+    width:100%;
+    height:8%;
+    background:#00F;
+}
+#content
+{
+    display: inline-table;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    margin-left: 4%;
+    width:80%;
+    height:85%;   
+    background:#FFF;
+}
+.contentItem
+{
+    float: left;
+    margin:2%;
+    width:20%;
+    height:20%;
+    background:#000;
+}
+#main-footer
+{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding:10px;
+    width:100%;
+    height:60px;
+    background:#b4b4b4;
+}
+
+#footer1
+{
+    width:70%;
+    height:35%;
+    background:#0F0;
+}

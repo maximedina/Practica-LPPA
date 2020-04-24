@@ -1,0 +1,29 @@
+body {
+    border:2px solid #000;
+}
+ 
+#div1
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    width:200px;
+    height:200px;
+    background:#F00;
+}
+#div2
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:150px;
+    height:150px;
+    background:#00F;
+}
+#div3
+{
+    width:100px;
+    height:100px;
+    background:#0F0;
+}

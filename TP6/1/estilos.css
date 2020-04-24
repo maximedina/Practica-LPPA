@@ -1,0 +1,13 @@
+body {
+    background: #999;
+}
+ 
+div
+{
+margin-top: 100px;
+margin-left: 100px;
+border:2px solid #000;
+width:200px;
+height:200px;
+background:#0F0;
+}

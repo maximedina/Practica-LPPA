@@ -1,0 +1,48 @@
+body {
+    background:#999;
+    margin: 40px;
+}
+ 
+#div1
+{
+    float: left;
+/*     margin: 50px; */
+/*     padding:40px; */
+    width:70px;
+    height:270px;
+    background:#0F0;
+}
+#div2
+{
+    float: left;
+    margin-left: 15px;
+    width:280px;
+    height:270px;
+    background:#F00;
+}
+#div3
+{
+    float: left;
+    margin-left: 45px;
+    margin-top: 15px;
+    width:70px;
+    height:90%;
+    background:#00F;
+}
+#div4
+{
+    float: left;
+    margin-left: 45px;
+    margin-top: 15px;
+    width:70px;
+    height:90%;
+    background:#999;
+}
+#div5
+{
+    float: left;
+    margin-left: 15px;
+    width:70px;
+    height:270px;
+    background:#000;
+}
