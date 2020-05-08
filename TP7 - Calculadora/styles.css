@@ -1,0 +1,71 @@
+body{
+    font-family: Arial, sans-serif;
+}
+#titulo{
+    color:#ffffff;
+}
+#marco {
+    width:350px;
+    height:auto;
+    padding:10px 0;
+    margin: auto;
+    background:#263844;
+    border:#000 1px solid;
+    border-radius:8px;
+    text-align: center;
+    display: flexbox;
+    justify-content: center;
+}
+
+#resultado {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width:330px;
+    height:60px;
+    margin: 12px auto;
+    color:#cccccc;
+    background-color: #1a262e;
+    font-size: 45px;
+    letter-spacing: 3px;
+    overflow:hidden;
+    border:#000 1px solid;
+    border-radius:7px;
+    box-sizing:border-box;
+}
+
+#botones {
+    width:350px;
+    margin:auto;
+    padding:0;
+    display: flex;
+    justify-content: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+button {
+    cursor: pointer;
+    width:75px;
+    height:60px;
+    margin-left: 10px;
+    margin-top: 10px;
+    /* padding:18px 0 12px; */
+    color:#bbbbbb;
+    font-family: Arial, sans-serif;
+    font-size:30px;
+    background-color:#3e4c4e;
+    border: #000 1px solid;
+    border-radius:5px;
+    text-align: center;
+    box-sizing:border-box;
+}
+
+/* #mas{
+   height: 130px; 
+} */
+
+#igual{
+    width: 160px; 
+ }
