@@ -1,0 +1,77 @@
+<!DOCType html>
+
+<head>
+    <title>Maximiliano Medina</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <form id="formulario" action="#">
+        <div id="titulo">
+            <label>Registro</label>
+        </div>
+        <div class="linea">
+            <div class="nombre">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" minlength="3" />
+            </div>
+            <div class="nombre">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" minlength="3" />
+            </div>
+        </div>
+        <div class="linea">
+            <div class="email">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" />
+            </div>
+            <div class="edad">
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" name="edad" min="1" max="99" />
+            </div>
+            <div class="pais">
+                <label for="pais">País</label>
+                <select id="pais">
+                    <option value="Argentina" selected>Argentina</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Uruguay">Uruguay</option>
+                </select>
+            </div>
+        </div>
+        <div class="linea">
+            <div class="sexo">
+                <label for="sexo">Sexo</label>
+                <div class="item"><input type="radio" id="mujer" name="sexo" value="Mujer" checked="checked" />
+                    <label for="mujer">Mujer</label></div>
+                <div class="item"><input type="radio" id="hombre" name="sexo" value="Hombre" />
+                    <label for="hombre">Hombre</label></div>
+                <div class="item"><input type="radio" id="otro" name="sexo" value="Otro" />
+                    <label for="otro">Otro</label></div>
+            </div>
+            <div class="intereses">
+                <label for="intereses">Temas de Interés</label>
+                <div class="item"><input type="checkbox" id="deportes" name="intereses" value="Deportes">
+                    <label for="deportes">Deporte</label></div>
+                <div class="item"><input type="checkbox" id="musica" name="intereses" value="Música">
+                    <label for="musica">Música</label></div>
+                <div class="item"><input type="checkbox" id="juegos" name="intereses" value="Juegos">
+                    <label for="juegos">Juegos</label></div>
+                <div class="item"><input type="checkbox" id="tecnologia" name="intereses" value="Tecnología">
+                    <label for="tecnologia">Tecnología</label></div>
+                <div class="item"><input type="checkbox" id="otros" name="intereses" value="Otros">
+                    <label for="otros">Otros</label></div>
+            </div>
+            <div class="comentario">
+                <label for="comentario">Comentario</label>
+                <textarea name="comentario" id="comentario" cols="20" rows="5"></textarea>
+            </div>
+        </div>
+        <div class="linea">
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+</body>
+
+</html>
