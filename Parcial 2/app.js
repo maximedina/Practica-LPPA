@@ -10,7 +10,7 @@ window.onload = async function () {
     }
     // ejecuto la promesa "fecth" que nos permite hacer una peticion HTTP y la promesa nativa "json" para formatear la respuesta a JSON
     //y lo guardo en una variable
-    var response = await fetch('http://dummy.restapiexample.com/api/v1/employees');
+    var response = await fetch('https://run.mocky.io/v3/11540f28-5acd-487a-867f-bf62ca4c01c4');
     var formattedResponse = await response.json();
     var employees = formattedResponse.data;
     //guardo el json en el localStorage
