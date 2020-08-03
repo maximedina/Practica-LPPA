@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>4 en linea</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js"></script>
+</head>
+
+<body>
+  <div id="marco">
+    <div id="inicio">
+      <div id="titulo">4 EN LINEA</div>
+      <div id="contacto"><button id="btnModal">@</button></div>
+    </div>
+    <form name="formulario" id="formulario">
+      <div id="opciones1" class="opciones">
+        Cantidad de jugadores
+        <input type="radio" name="cantJugadores" value="2" checked onclick="nuevaPartida()">2</input>
+        <input type="radio" name="cantJugadores" value="3" onclick="nuevaPartida()">3</input>
+      </div>
+      <div id="opciones2">
+        <input type="radio" name="opcionPartida" id="opcionNueva" value="nueva" checked onclick="nuevaPartida()">Nueva
+        partida</input>
+        <input type="radio" name="opcionPartida" id="opcionGuardadas" value="guardadas"
+          onclick="partidasGuardadas()">Cargar partida</input>
+        <div id="jugadores">
+          <div class="nombres" id="nombreJug1"><input type="text" id="nombreJugador1" minlength="3" maxlength="14"
+              value="Jugador 1" size="11"
+              oninput="document.getElementById('nombreJ1').innerText=this.value;"></input><input type="color"
+              id="colorJugador1" value="#D13D3D"
+              oninput="document.getElementById('jugador1').style.borderColor=this.value;"></input></div>
+          <div class="nombres" id="nombreJug2"><input type="text" id="nombreJugador2" minlength="3" maxlength="14"
+              value="Jugador 2" size="11"
+              oninput="document.getElementById('nombreJ2').innerText=this.value;"></input><input type="color"
+              id="colorJugador2" value="#FFD966"></input></div>
+          <div class="nombres" id="nombreJug3" style="display: none;">
+            <input type="text" id="nombreJugador3" minlength="3" maxlength="14" value="Jugador 3" size="11"
+              oninput="document.getElementById('nombreJ3').innerText=this.value;"></input><input type="color"
+              id="colorJugador3" value="#44546A"></input>
+          </div>
+        </div>
+        <div id="guardadas" style="display: none;">
+          <table id="tablaPartidasGuardadas">
+            <thead id="columnas">
+            </thead>
+            <tbody id="detalle"></tbody>
+          </table>
+        </div>
+      </div>
+    </form>
+    <div id="botones">
+      <button type="button" id="comenzar" onclick="comenzarPartida()">Iniciar</button>
+      <button type="button" id="guardar" onclick="guardarPartida()" disabled>Guardar</button>
+      <button type="button" id="reiniciar" onclick="nuevaPartida()" disabled>Reiniciar</button>
+    </div>
+    <div id="infoJugadores">
+      <div id="jugador1" class="jugador" style="border-color: #D13D3D;">
+        <div id="nombreJ1">Jugador 1</div>
+        <div id="tiempoJ1">00:00</div>
+      </div>
+      <div id="jugador2" class="jugador">
+        <div id="nombreJ2">Jugador 2</div>
+        <div id="tiempoJ2">00:00</div>
+      </div>
+      <div id="jugador3" style="display: none;" class="jugador">
+        <div id="nombreJ3">Jugador 3</div>
+        <div id="tiempoJ3">00:00</div>
+      </div>
+    </div>
+    <div id="resultado"></div>
+    <div>
+      <table>
+        <thead id="flechas"></thead>
+        <tbody id="tablero"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div id="formularioModal" class="modalContainer">
+    <div class="modal-content">
+      <span class="close">×</span>
+      <form id="formulario" action="#" onsubmit="enviarEmail()">
+        <div id="tituloContacto">
+          Contacto
+        </div>
+        <div class="linea">
+          <input type="text" id="nombre" name="nombre" class="contacto" placeholder="Nombre" required />
+        </div>
+        <div class="linea">
+          <input type="email" id="email" name="email" class="contacto" placeholder="Email" required />
+        </div>
+        <div class="linea">
+          <textarea name="mensaje" id="mensaje" cols="20" rows="5" class="contacto" minlength="6" placeholder="Mensaje"
+            required></textarea>
+        </div>
+        <div class="linea">
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
