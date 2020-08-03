@@ -25,7 +25,7 @@ Existe un botón de contacto (**@**) en la esquina superior derecha, con el cual
 
 ## Link del juego 📌
 
-[Cuatro en línea](https://titojuan1234.github.io/test/index.html)
+[Cuatro en línea](https://maximedina.github.io/Practica-LPPA/cuatro_en_linea/)
 
 ## Autor ✒️
 
