@@ -1,6 +1,6 @@
 # Examen final de LPPA - Juego: Cuatro en Línea
 
-El programa representa en forma digital al popular juego de fichas conocido como "cuatro en línea" ([wikipedia])(https://es.wikipedia.org/wiki/Conecta_4).
+El programa representa en forma digital al popular juego de fichas conocido como "cuatro en línea" ([wikipedia](https://es.wikipedia.org/wiki/Conecta_4)).
 
 ## Objetivo del juego 🚀
 
