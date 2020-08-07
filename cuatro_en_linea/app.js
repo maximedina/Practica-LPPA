@@ -8,33 +8,6 @@ var seleccionado = null;
 
 window.onload = function () {
   nuevaPartida();
-  //presentacion del formulario modal de contacto
-  if (document.getElementById("btnModal")) {
-    var modal = document.getElementById("formularioModal");
-    var btn = document.getElementById("btnModal");
-    var span = document.getElementsByClassName("close")[0];
-    var body = document.getElementsByTagName("body")[0];
-    btn.onclick = function () {
-      modal.style.display = "block";
-      body.style.position = "static";
-      body.style.height = "100%";
-      body.style.overflow = "hidden";
-    }
-    span.onclick = function () {
-      modal.style.display = "none";
-      body.style.position = "inherit";
-      body.style.height = "auto";
-      body.style.overflow = "visible";
-    }
-    window.onclick = function (event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-        body.style.position = "inherit";
-        body.style.height = "auto";
-        body.style.overflow = "visible";
-      }
-    }
-  }
 }
 
 //Funcion que setea visualizacion de opciones para nueva partida y llama a la inicializacion del tablero
@@ -195,8 +168,8 @@ function partidasGuardadas() {
 //da inicio a los cronometros y habilita las flechas para insertar fichas. Ademas verifica el largo del nombre de los jugadores.
 function comenzarPartida() {
   if (document.formulario.nombreJugador1.value.length < 3 ||
-      document.formulario.nombreJugador2.value.length < 3 ||
-      (document.formulario.cantJugadores.value == 3 && document.formulario.nombreJugador3.value.length <3)) {
+    document.formulario.nombreJugador2.value.length < 3 ||
+    (document.formulario.cantJugadores.value == 3 && document.formulario.nombreJugador3.value.length < 3)) {
     alert("El nombre de jugador debe contener entre 3 y 14 caracteres.");
   }
   else {

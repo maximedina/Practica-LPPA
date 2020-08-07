@@ -11,7 +11,7 @@
   <div id="marco">
     <div id="inicio">
       <div id="titulo">4 EN LINEA</div>
-      <div id="contacto"><button id="btnModal">@</button></div>
+      <div id="contacto"><button id="btnModal" onclick="document.getElementById('formularioModal').style.display = 'block';">@</button></div>
     </div>
     <form name="formulario" id="formulario">
       <div id="opciones1" class="opciones">
@@ -79,7 +79,7 @@
 
   <div id="formularioModal" class="modalContainer">
     <div class="modal-content">
-      <span class="close">×</span>
+      <span class="close" onclick="document.getElementById('formularioModal').style.display = 'none';">×</span>
       <form id="formulario" action="#" onsubmit="enviarEmail()">
         <div id="tituloContacto">
           Contacto
